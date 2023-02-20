@@ -1,0 +1,28 @@
+.titulo > p{
+    color: var(--text-1);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.titulo > h1{
+    color: var(--color-0);
+    font-family: 'Poppins';
+}
+.titulo >h1 >span{
+    color: var(--color-1);
+}
+.termos h2 + h2{
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: var(--color-10);
+    margin: 10px 0;
+}
+.termos p{
+    max-width: 175ch;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: var(--color-10);
+    padding: 10px 0;
+}
+.termos{
+    padding: 80px 20px;
+}

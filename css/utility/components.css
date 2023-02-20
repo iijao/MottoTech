@@ -52,3 +52,21 @@
 .link:hover{
     color: var(--color-0);
 }
+
+.titulo-bg{
+    padding: 60px 0;
+    background-color: var(--color-10);
+}
+.titulo p{
+    margin-bottom: 4px;
+}
+@media (max-width: 800px) {
+    .titulo-bg{
+        padding: 40px 0;
+    }
+    .titulo p{
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
+}

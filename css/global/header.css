@@ -1,5 +1,5 @@
 .header-bg{
-    background-color: var(--color-10);
+    background-color: var(--color-11);
 }
 .header{
     display: flex;
@@ -43,6 +43,9 @@
 @media (max-width: 800px) {
     .header-menu{
         gap: 1.25rem;
+    }
+    .header{
+        padding: 10px 0;
     }
     .logo{
         width: 200px;
