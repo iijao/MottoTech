@@ -1,0 +1,66 @@
+.motos-list{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.motos-list h2{
+    color: var(--color-10);
+    margin-bottom: 40px;
+    font: 600 3.3rem/1.125 'Poppins', sans-serif;
+}
+.motos-list h2 span{
+    color: var(--color-1);
+}
+.motos-list ul{
+    display: flex;
+    gap: 2.5rem;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+.motos-list span{
+    color: var(--text-2);
+    font-weight: bold;
+}
+.motos-list h3{
+    color: var(--color-10);
+    font: 600 2.2rem/1.125 'Poppins', sans-serif;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.motos-list h3::before{
+    content: '';
+    background: linear-gradient(#c00d6d, #9e2373);
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    transition: width 0.2s;
+    display: inline-block;
+}
+.motos-list a:hover h3::before{
+    width: 24px;
+}
+.motos-list li{
+    min-width: 280px;
+
+}
+.motos-list a{
+    display: block;
+}
+
+.motos-list img{
+    margin-bottom: 1rem;
+}
+.motos-list li span{
+    padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .motos-list{
+        padding-bottom: 60px;
+    }
+    .motos-list ul{
+        gap: 20px;
+    }
+}
