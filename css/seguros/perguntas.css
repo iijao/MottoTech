@@ -1,0 +1,26 @@
+.perguntas dt{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--color-10);
+}
+.perguntas dd{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: .95rem;
+    color: var(--text-4);
+}
+.perguntas{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.perguntas h2{
+    margin-bottom: 60px;
+}
+.perguntas dl > div{
+    padding: 20px;
+    border-radius: 4px;
+}
+.perguntas dl > div:nth-child(odd){
+    background-color: var(--text-5);
+}
