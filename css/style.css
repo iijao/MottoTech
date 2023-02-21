@@ -24,6 +24,12 @@
 /* MOTOS-LIST */
 @import "./motos/motos-list.css";
 @import "./motos/motos.css";
+@import "./motos/whiteforce.css";
+
+/* MOTO */
+@import "./moto/moto.css";
+@import "./moto/seguro.css";
+
 
 /* TERMOS */
 @import "./termos/termos.css";

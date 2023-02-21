@@ -1,0 +1,153 @@
+.moto-content p{
+    color: var(--text-1);
+    font-family: 'roboto';
+}
+.moto-content > p{
+    color: var(--text-1);
+    font-family: 'poppins';
+}
+.moto-content > h2{
+    color: var(--text-1);
+    font-family: 'poppins';
+}
+.moto-comprar span{
+    color: var(--text-1);
+    font-family: 'poppins';
+    font-size: .9rem;
+}
+.moto-comprar a{
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.moto-info h3{
+    color: var(--color-0);
+    font-family: 'roboto';
+    font-weight: 500;
+}
+.moto-ficha-grid{
+    grid-column: 2;
+}
+.moto-ficha-grid > h2{
+    color: var(--text-1);
+    margin-bottom: 12px;
+    font-family: 'poppins';
+}
+.moto-ficha li{
+    color: var(--text-0);
+}
+.moto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.motos-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.motos-img img{
+    flex: 1;
+    min-width: 200px;
+}
+.motos-img img:first-child{
+    min-width: 100%;
+}
+.moto-content > p{
+    margin-bottom: 2rem;
+}
+.moto-comprar{
+    display: grid;
+    align-items: center;
+    gap: 8px 12px;
+    justify-items: start;
+    grid-template-columns: max-content auto;
+    margin-bottom: 40px;
+}
+.moto-comprar a{
+    grid-row: span 2;
+}
+.moto-comprar span{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-11);
+    padding: 4px 8px;
+    border-radius: 4px;
+    gap: 8px;
+
+}
+.moto-content h2{
+    text-transform: uppercase;
+    letter-spacing: .015em;
+    margin-bottom: 12px;
+}
+.moto-info,
+.moto-ficha{
+    padding: 2rem;
+    background-color: var(--color-11);
+    border-radius: 4px;
+}
+.moto-info{
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.moto-info img{
+    width: 24px;
+    margin-bottom: 8px;
+}
+.moto-info h3{
+    margin-bottom: 8px;
+}
+.moto-ficha li {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--text-5);
+}
+.moto-ficha li:last-child {
+    border-bottom: none;
+}
+.moto-ficha span{
+    font-family: 'poppins';
+    color: var(--text-2);
+    font-weight: 500;
+}
+@media (max-width:860px) {
+    .moto{
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .motos-img{
+        grid-row: 3;
+    }
+    .moto-ficha-grid{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.motos-list ul {
+    padding: 0;
+}
+@media (max-width:500px) {
+    .moto-info{
+        grid-template-columns: 1fr;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:350px) {
+    .moto-info{
+        grid-template-columns: 1fr;
+    }
+    .moto-comprar{
+        grid-template-columns: 1fr;
+    }
+}

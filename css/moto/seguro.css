@@ -1,0 +1,64 @@
+.seguro-moto-bg{
+    background-color: var(--color-10);
+    box-shadow: inset 0 120px var(--color-0), inset 0 -120px var(--color-11);
+}
+.seguro-moto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.seguro-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.seguro-content{
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+.seguro-moto h2{
+    margin-bottom: 2.3rem;
+    color: var(--color-0);
+    font: 600 2.2rem/1.125 'roboto', sans-serif;
+}
+.seguro-moto span{
+    margin-bottom: 2.3rem;
+    color: var(--color-1);
+    font: 600 2.2rem/1.125 'roboto', sans-serif;
+}
+.seguro-content > p{
+    font-size: 1.2rem;
+    color: var(--text-1);
+    font-family: 'poppins', sans-serif;
+}
+.seguro-moto p{
+    margin-bottom: 20px;
+}
+@media (max-width:800px) {
+    .seguro-moto-bg{
+        box-shadow: inset 0 -120px var(--color-11);
+    }
+    .seguro-img img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .seguro-moto{
+        grid-template-columns: 1fr;
+    }
+    .seguro-content{
+        grid-row: 1;
+        padding-top:40px;
+        padding-bottom: 0;
+    }
+}
+@media (max-width:600px) {
+    .seguro-moto-bg{
+        box-shadow: inset 0 -140px var(--color-11);
+    }
+}
+@media (max-width:350px) {
+    .seguro-moto-bg{
+        box-shadow: inset 0 -120px var(--color-11);
+    }
+}
