@@ -17,11 +17,13 @@
 @import "./home/depoimento.css";
 
 /* SEGUROS */
-
+@import "./seguros/perguntas.css";
 @import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
 
 /* MOTOS-LIST */
 @import "./motos/motos-list.css";
+@import "./motos/motos.css";
 
 /* TERMOS */
 @import "./termos/termos.css";

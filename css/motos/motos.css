@@ -1,0 +1,120 @@
+.motos-content > h2{
+    color: var(--color-10);
+    font-size: 2rem;
+    font-family: 'Roboto';
+}
+
+.motos-img > span {
+    color: var(--text-3);
+    font-weight: 600;
+    font-family: 'poppins';
+}
+
+.motos-content > p {
+    color: var(--text-3);
+    font-weight: 500;
+    font-family: 'roboto';
+}
+
+.motos-content li {
+    color: var(--text-3);
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: 'roboto';
+}
+.motos-bg{
+    background: linear-gradient(to right, var(--color-0) 25%, var(--color-10)10%);
+}
+.motos-bg h2{
+    color: var(--text-0);
+}
+.motos-bg p,
+.motos-bg span,
+.motos li{
+    color: var(--text-1);
+}
+.motos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+}
+.motos-img{
+    position: relative;
+}
+.motos-img span{
+    background-color: var(--color-11);
+    color: var(--text-0);
+    padding: 8px 16px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+.motos-content li img{
+    width: 25px;
+    margin-right: 8px;
+}
+.motos ul{
+    display: grid;
+    gap: 1rem;
+}
+.motos-content{
+    display: grid;
+    align-content: start;
+    grid-template-columns: 1fr auto;
+}
+.motos h2,
+.motos p{
+    grid-column: 1/-1;
+}
+.motos h2{
+    margin-bottom: 20px;
+}
+.motos h2::before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 8px;
+    background-color: var(--color-1);
+    margin-bottom: 8px;
+}
+.motos p{
+    margin-bottom: 2rem;
+}
+.motos a{
+    place-self: end;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.motos li{
+    display: flex;
+    align-items: center;
+}
+.light li{
+    color: var(--text-3);
+}
+@media (max-width: 800px) {
+    .motos-bg{
+        background: linear-gradient(to right, var(--color-10) 0%, var(--color-10)0%);
+    }
+    .motos{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 600px) {
+    .motos-content{
+        grid-template-columns: 1fr;
+    }
+    .motos ul{
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1rem;
+    }
+    .motos a{
+        place-self: center;
+    }
+}
