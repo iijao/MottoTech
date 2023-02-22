@@ -1,0 +1,84 @@
+.lojas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.lojas h2{
+    grid-column: 1/-1;
+}
+.lojas h2{
+    color: var(--color-10);
+    margin-bottom: 60px;
+    font: 600 3.3rem/1.125 'Poppins', sans-serif;
+}
+.lojas h2 > span{
+    color: var(--color-1);
+}
+.lojas img{
+    border-radius: 4px 4px 0 0;
+}
+.lojas-item{
+    border-radius: 4px;
+    background: var(--color-0);
+    box-shadow: 0 1px 2px, rgb(0, 0, 0 .1);
+}
+.lojas-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 1rem;
+    padding: 2rem;
+}
+.lojas-content h3,
+.lojas-tempo{
+    grid-column: 1/-1;
+}
+.lojas-content h3{
+    font-family: 'roboto';
+    font-size: 1.5rem;
+    color: var(--color-10);
+}
+.lojas-dados p,
+.lojas-dados a{
+    font-weight: bold;
+    color: var(--text-3);
+    font-family: 'poppins';
+
+}
+.lojas-dados{
+    display: grid;
+    gap: 8px;
+    border-left: 2px solid var(--text-6);
+    padding-left: 12px;
+}
+.lojas-tempo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.lojas-tempo{
+    font-weight: bold;
+    font-size: .95rem;
+    color: var(--color-10);
+    font-family: 'poppins';
+}
+@media (max-width:800px) {
+    .lojas{
+        gap: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .lojas h2{
+        margin-bottom: 2rem;
+        font-size: 2.8rem;
+    }
+    .lojas-content{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:650px) {
+    .lojas{
+        grid-template-columns: 1fr;
+    }
+}

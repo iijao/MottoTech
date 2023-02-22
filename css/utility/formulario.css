@@ -31,6 +31,9 @@
 .form .col-2{
     grid-column: span 2;
 }
+.col-2 > textarea{
+    resize: none;
+}
 @media (max-width:600px) {
     .form{
         grid-template-columns: 1fr;
