@@ -18,6 +18,8 @@
     font-size: 1.125rem;
     line-height: 1.33;
     width: max-content;
+    border: none;
+    cursor: pointer;
 }
 .btn:hover{
     background: linear-gradient(#c00d6d, #9e2373);

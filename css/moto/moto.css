@@ -137,13 +137,21 @@
 .motos-list ul {
     padding: 0;
 }
+@media (max-width:700px) {
+    .motos-img img:nth-child(2){
+        display: none;
+    }
+    .motos-img img:nth-child(3){
+        display: none;
+    }
+}
 @media (max-width:500px) {
     .moto-info{
         grid-template-columns: 1fr;
         margin-bottom: 10px;
     }
 }
-@media (max-width:350px) {
+@media (max-width:4000px) {
     .moto-info{
         grid-template-columns: 1fr;
     }
