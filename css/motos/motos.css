@@ -38,6 +38,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 60px 20px;
+    position: relative;
+}
+.motos::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: url(../../imgs/detalhes/bottom-left.svg) no-repeat;
+    position: absolute;
+    top: 50px;
+    right: 0;
 }
 .motos-img{
     position: relative;
@@ -95,7 +105,7 @@
 .light li{
     color: var(--text-3);
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .motos-bg{
         background: linear-gradient(to right, var(--color-10) 0%, var(--color-10)0%);
     }
@@ -104,6 +114,7 @@
         gap: 20px;
         padding: 40px 20px;
     }
+    
 }
 @media (max-width: 600px) {
     .motos-content{

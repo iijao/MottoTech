@@ -22,6 +22,15 @@
 .depoimento-content{
     padding: 40px 40px 80px 80px;
     align-self: end;
+    position: relative;
+}
+.depoimento-content::after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    background: url(../../imgs/detalhes/bottom-right.svg) no-repeat;
 }
 .depoimento span{
     font-weight: 500;
@@ -67,6 +76,9 @@
     .depoimento img{
         height: 350px;
         object-position: top;
+    }
+    .depoimento-content::after{
+        background: none;
     }
 }
 @media (max-width: 660px){
