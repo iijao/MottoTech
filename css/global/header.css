@@ -7,7 +7,6 @@
     gap: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    
 }
 .logo{
     width: 250px;
@@ -36,7 +35,8 @@
     transition: 0.3s;
     position: absolute;
 }
-.header-menu a:hover::after{
+.header-menu a:hover::after,
+.header-menu a.ativo-bottom::after{
     width: 100%;
 }
 
@@ -74,4 +74,10 @@
         font-size: 0.875rem;
         padding: 0.75rem 0.5rem;
     }
+    .header-bg{
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
+
 }

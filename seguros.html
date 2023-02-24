@@ -15,6 +15,7 @@
                 <img src="./imgs/logo.png" alt="MotoTech">
             </a>
             <nav aria-label="primaria">
+                <button id="btn-mobile"></button>
                 <ul class="header-menu medium-txt">
                     <li><a href="./motos.html">Motos</a></li>
                     <li><a href="./seguros.html">Seguros</a></li>
@@ -125,8 +126,8 @@
         <h2>Perguntas frequentes<span>.</span></h2>
         <dl>
             <div>
-                <dt>Quais formas de pagamento?</dt>
-                <dd>Oferecemos uma variedade de opções de pagamento para tornar 
+                <dt><button aria-controls="pergunta1" aria-expanded="true">Quais formas de pagamento?</button></dt>
+                <dd id="pergunta1" class="ativa">Oferecemos uma variedade de opções de pagamento para tornar 
                     a sua compra o mais conveniente possível. Aceitamos todos os 
                     principais cartões de crédito e débito, transferências bancárias 
                     por Pix, boletos bancários e outras formas de pagamento eletrônico. 
@@ -135,23 +136,23 @@
                 </dd>
             </div>
             <div>
-                <dt>Como entro em contato?</dt>
-                <dd>Para entrar em contato conosco, você pode utilizar nossos canais de 
+                <dt><button aria-controls="pergunta2" aria-expanded="false">Como entro em contato?</button></dt>
+                <dd id="pergunta2">Para entrar em contato conosco, você pode utilizar nossos canais de 
                     atendimento por telefone ou email. Temos uma equipe pronta para ajudar 
                     e responder a quaisquer perguntas ou dúvidas que você possa ter.
                 </dd>
             </div>
             <div>
-                <dt>Possuem algum desconto?</dt>
-                <dd>Sim, oferecemos descontos em determinados produtos e promoções especiais 
+                <dt><button aria-controls="pergunta3" aria-expanded="false">Possuem algum desconto?</button></dt>
+                <dd id="pergunta3">Sim, oferecemos descontos em determinados produtos e promoções especiais 
                     em épocas específicas do ano. Para ficar por dentro das nossas ofertas, 
                     fique atento ao nosso site e redes 
                     sociais. Entre em contato conosco para mais informações.
                 </dd>
             </div>
             <div>
-                <dt>Qual garantia eu tenho?</dt>
-                <dd>Nós oferecemos garantia em todos os nossos produtos. O período e as 
+                <dt><button aria-controls="pergunta4" aria-expanded="false">Qual garantia eu tenho?</button></dt>
+                <dd id="pergunta4">Nós oferecemos garantia em todos os nossos produtos. O período e as 
                     condições de garantia podem variar de acordo com o produto, 
                     mas todas as informações estão disponíveis em nossa página de termos. 
                     Caso você tenha alguma dúvida ou precise acionar a garantia, entre em 
@@ -200,5 +201,6 @@
             <p class="footer-copy">Mottotech © Alguns direitos reservados.</p>
         </div>
     </footer>
+    <script defer src="main.js"></script>
 </body>
 </html>

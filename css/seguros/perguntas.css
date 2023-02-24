@@ -1,8 +1,18 @@
-.perguntas dt{
+.perguntas button{
     font-family: 'poppins';
     font-weight: 600;
     font-size: 1.3rem;
     color: var(--color-10);
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+.perguntas dd{
+    display: none;
+}
+.perguntas dd.ativa{
+    display: block;
 }
 .perguntas dd{
     font-family: 'poppins';
