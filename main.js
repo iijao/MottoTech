@@ -14,6 +14,7 @@ links.forEach(ativarLink);
 
 function toggleMenu (){
     headerMenu.classList.toggle("ativo");
+    btnMobile.classList.toggle('btn-ativo')
 }
 
 btnMobile.addEventListener('click', toggleMenu);
